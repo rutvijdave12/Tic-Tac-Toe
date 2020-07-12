@@ -31,12 +31,14 @@ function addMarker(){
 			gameCell[i].removeEventListener("click",addMarker);
 		}
 	}
-	if(checkWinner("o")){
+	else if(checkWinner("o")){
 		for(var i=0; i<gameCell.length; i++){
 			gameCell[i].removeEventListener("click",addMarker);
 		}
 	}
-	checkTie();
+	else{
+		checkTie();
+	}
 }
 
 
